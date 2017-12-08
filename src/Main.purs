@@ -81,7 +81,7 @@ replaceItem item arr = map func arr
 removeItem delete arr = filter func arr
   where
     func :: TodoContent -> Boolean
-    func (TodoContent item) = item."data" /= delete."data"
+    func (TodoContent item) = item."date" /= delete."date"
 
 commonFlow = do
   oldData <- loadS "todos"
