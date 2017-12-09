@@ -10,7 +10,6 @@
 <center> <div class="title">TODO APP </div></center>
 <center><div id="app" style="margin:20px;height: inherit;">
     <input class="w3-input w3-border"  type="text" placeholder="Enter the Content" name="todo" v-model="input" ></p>
-    <p> {{give}} </p>
     <button type="submit" @click="addTodo">
         Add Todo
     </button>
@@ -88,7 +87,6 @@ var application = new Vue({
 	el: '#app',
     data: {
         input : '',
-        give : '' ,
 		todos : JSON.parse(localStorage.getItem('todos') || "[]"),
         count : (JSON.parse(localStorage.getItem('todos') || "[]")).length
     },
@@ -96,17 +94,10 @@ var application = new Vue({
     	addTodo: function() {
             if(this.input.length==0)
                 return ;
-            this.count +=1
         	window.callBack(JSON.stringify({"tag":"AddToDo","contents":this.input}))()
         },
         deleteTodo : function (item) {
-            this.count -=1;
             window.callBack(JSON.stringify( {"tag":"RemoveToDo","contents": {"data":item.data,"date":item.date , "show" : true} } ))()
-        },
-        format : function (date) {
-           var date = new Date(date),str;
-           str = date.getDate()+"/"+date.getMonth()+"/"+date.getFullYear()+ " - "+ date.getHours()+":"+date.getMinutes()+":"+date.getSeconds()
-           return str
         },
         saveTodo : function (item) {
             window.callBack(JSON.stringify( {"tag":"UpdateToDo","contents": {"data":item.data,"date":item.date , "show" : true} } ))()
