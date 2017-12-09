@@ -7,7 +7,7 @@ import Control.Monad.Eff.Exception (Error)
 import Presto.Core.Types.API (Request(..), URL)
 import Presto.Core.Types.App (UI)
 
-newtype NativeRequest = NativeRequest
+newtype NativeRequest = NativeRequest 
   { method :: String
   , url :: URL
   }

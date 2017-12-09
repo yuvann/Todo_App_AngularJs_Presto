@@ -8,3 +8,4 @@ Run the PureScript compiler using:
 Run server using `npm start`
 
 Open `index.html` in your browser to run the app.
+ 

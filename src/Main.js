@@ -10,5 +10,5 @@ exports.strToJson = function(str1) {
 	}
 };
 exports.stringify = function(arrJson) {
-    return JSON.stringify(arrJson) 
+    return JSON.stringify(arrJson)  
 };

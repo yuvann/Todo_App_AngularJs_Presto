@@ -14,7 +14,7 @@ handleScreenAction = (state) => {
     default: console.log("Invalid Tag Passed", state.tag);
 
   }
-}
+} 
 
 update = (val) => {
   if(val==="FAILURE") {

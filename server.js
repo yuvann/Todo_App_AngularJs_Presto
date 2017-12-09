@@ -9,7 +9,7 @@ app.get('/time', (req, res) =>{
  
 
 app.get('/', (req, res) =>{
- res.sendfile('index.html');
+ res.sendfile('index.html') ;
 })
 
 

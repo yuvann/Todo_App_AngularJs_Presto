@@ -4,7 +4,7 @@ exports["showUI'"] = function(sc) {
         var screenJSON = JSON.parse(screen);
         var screenName = screenJSON.tag;
         screenJSON.screen = screenName;
-        window.showScreen(sc, screenJSON);
+        window.showScreen(sc, screenJSON); 
       }
     }
 };

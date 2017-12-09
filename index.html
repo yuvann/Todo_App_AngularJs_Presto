@@ -16,7 +16,7 @@
     <br>
 
     <div ng-repeat="item in todos" class="todoBox">
-        <div>
+        <div> 
             <p ng-show=item.show >  <span>{{item.data}} </span> </p>
             <input class="w3-input w3-border" ng-show=!item.show  rows="5" cols="100" ng-model=item.data  >  </input>
         </div>

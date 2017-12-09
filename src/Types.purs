@@ -13,7 +13,7 @@ data InitScreen = InitScreen InitScreenState
 data InitScreenState
   = InitScreenInit
   | InitScreenAddTodo String
-  | InitScreenRemoveTodo String
+  | InitScreenRemoveTodo String 
   | InitScreenUpdateTodo String
 
 data InitScreenAction

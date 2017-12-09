@@ -8,7 +8,7 @@ import Presto.Core.Types.API (Headers(..))
 import Presto.Core.Types.Language.Flow (APIResult)
 import Types (TimeReq(..), TimeResp(..))
 
-getTime :: Flow (APIResult String)
+getTime :: Flow (APIResult String) 
 getTime = do
   eResponse <- callAPI (Headers []) TimeReq
   case eResponse of
