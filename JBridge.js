@@ -6,3 +6,4 @@ JBridge.getFromSharedPrefs = function(key) {
 JBridge.setInSharedPrefs = function(key,value) {
     localStorage.setItem(key,value)
 };
+ 

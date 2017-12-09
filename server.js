@@ -6,7 +6,7 @@ app.get('/time', (req, res) =>{
   var date = new Date().toISOString()
   res.send(date)
 })
-
+ 
 
 app.get('/', (req, res) =>{
  res.sendfile('index.html');

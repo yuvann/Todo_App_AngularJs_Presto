@@ -6,7 +6,7 @@ handleScreenAction = (state) => {
       update(state.contents);
       break;
     case "InitScreenRemoveTodo":
-      update(state.contents);
+      update(state.contents); 
       break;
     case "InitScreenUpdateTodo":
       update(state.contents);
